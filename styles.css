@@ -15,3 +15,7 @@ body{background:radial-gradient(circle at 82% 0%,#1c2a38 0,#0b1014 38%,#080c10 1
 /* Compact team labels leave the scoreboard room to breathe */
 .sport-card .matchup{grid-template-columns:minmax(0,1fr) 96px minmax(0,1fr)}.sport-card .versus{min-height:66px;font-size:30px;letter-spacing:-.1em}.sport-card .team-name{min-width:0}.sport-card .team-short-name{display:block;color:var(--ink);font:700 17px/1 var(--mono);letter-spacing:.05em}.sport-card .team-full-name{display:none}.sport-card .team-identity{white-space:nowrap}.sport-card .team:last-child .team-name{text-align:right}
 @media(max-width:640px){.sport-card .matchup{grid-template-columns:minmax(0,1fr) 76px minmax(0,1fr)}.sport-card .versus{min-height:58px;font-size:24px}.sport-card .team-short-name{font-size:14px}.sport-card .team-identity{gap:4px}}
+
+/* Rebalance score and team identity */
+.sport-card .matchup{grid-template-columns:minmax(0,1fr) 74px minmax(0,1fr);gap:7px;padding:16px 0 14px;margin:16px 0 14px}.sport-card .versus{min-height:52px;padding:6px 3px;border-radius:8px;font-size:23px;letter-spacing:-.08em}.sport-card .team-short-name{font-size:15px;letter-spacing:.03em}.sport-card .team-badge{width:28px;height:28px}
+@media(max-width:640px){.sport-card .matchup{grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);gap:4px;padding:13px 0 12px}.sport-card .versus{min-height:46px;font-size:20px}.sport-card .team-short-name{font-size:13px}.sport-card .team-badge{width:24px;height:24px}}
