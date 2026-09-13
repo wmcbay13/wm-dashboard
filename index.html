@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101317" />
+    <meta name="description" content="A calm personal status dashboard for weather, sports, video, and community signals." />
+    <title>Daymark — Personal status dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Daymark home"><span class="brand-mark">✦</span> DAYMARK</a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#weather">Weather</a><a href="#sports">Sports</a><a href="#signals">Signals</a>
+      </nav>
+      <div class="header-actions"><span class="updated-label" id="updated-label">Preparing your brief…</span><button class="icon-button" id="refresh-button" type="button" aria-label="Refresh dashboard" title="Refresh dashboard">↻</button></div>
+    </header>
+
+    <main id="top" class="page-shell">
+      <section class="hero-grid" aria-labelledby="page-title">
+        <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-line"></span> PERSONAL STATUS / <span id="today-label">TODAY</span></p><h1 id="page-title">Good morning.<br /><em>Here’s your signal.</em></h1><p class="hero-intro">A small, useful read on what’s happening around you, on the schedule, and worth your attention next.</p><div class="hero-meta"><span class="live-dot"></span><span id="clock-label">Local time</span><span class="meta-divider">·</span><span id="brief-status">Loading your brief</span></div></div>
+        <aside class="next-up-card" aria-labelledby="next-up-title"><div class="card-kicker"><span class="live-dot"></span> NEXT UP</div><div id="next-up-content"><p class="skeleton skeleton-line"></p><p class="skeleton skeleton-line short"></p><p class="skeleton skeleton-line tiny"></p></div></aside>
+      </section>
+
+      <section class="weather-section dashboard-section" id="weather" aria-labelledby="weather-title">
+        <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line blue"></span> OUTSIDE / <span id="weather-location-label">LOCATING</span></p><h2 id="weather-title">Weather, <em>in your rhythm.</em></h2></div><button class="text-button" id="location-button" type="button">Change location <span>↗</span></button></div>
+        <div class="weather-layout">
+          <article class="weather-now panel" aria-live="polite"><div class="weather-now-top"><span class="weather-icon" id="weather-icon">☼</span><div><span class="card-kicker">RIGHT NOW</span><span class="weather-summary" id="weather-summary">Loading conditions…</span></div></div><div class="current-temperature"><span id="current-temperature">—</span><sup>°</sup><span class="temperature-unit">F</span></div><div class="weather-facts"><span>Feels <b id="feels-like">—</b></span><span>Wind <b id="wind-speed">—</b></span><span>Rain <b id="rain-chance">—</b></span></div><p class="panel-note" id="weather-note">Weather updates directly from your selected location.</p></article>
+          <article class="hourly-panel panel"><div class="panel-heading"><div><span class="card-kicker">THE NEXT 6 HOURS</span><h3>What the day is doing</h3></div><span class="tiny-label">HOURLY</span></div><div class="hourly-row" id="hourly-row" aria-live="polite"><p class="empty-state">Reading the sky…</p></div></article>
+        </div>
+        <div class="forecast-panel panel"><div class="panel-heading"><div><span class="card-kicker">LOOKING AHEAD</span><h3>Five day forecast</h3></div><span class="tiny-label" id="forecast-timezone">LOCAL TIME</span></div><div class="forecast-row" id="forecast-row" aria-live="polite"><p class="empty-state">Building the forecast…</p></div></div>
+      </section>
+
+      <section class="sports-section dashboard-section" id="sports" aria-labelledby="sports-title">
+        <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line orange"></span> YOUR TEAMS / SCOREBOARD</p><h2 id="sports-title">The games <em>worth knowing.</em></h2></div><div class="filter-row" id="sports-filters" role="group" aria-label="Filter sports"><button class="filter-button active" data-sport-filter="all" type="button">All</button><button class="filter-button" data-sport-filter="NFL" type="button">NFL</button><button class="filter-button" data-sport-filter="MLB" type="button">MLB</button><button class="filter-button" data-sport-filter="NHL" type="button">NHL</button><button class="filter-button" data-sport-filter="CFB" type="button">CFB</button></div></div>
+        <div class="sports-grid" id="sports-grid" aria-live="polite"><p class="empty-state">Loading the scoreboard…</p></div>
+        <div class="schedule-panel panel"><div class="panel-heading"><div><span class="card-kicker">COMING UP</span><h3>Next on the calendar</h3></div><span class="tiny-label">14 DAY VIEW</span></div><div class="schedule-list" id="schedule-list"><p class="empty-state">Loading your schedule…</p></div></div>
+      </section>
+
+      <section class="signals-section dashboard-section" id="signals" aria-labelledby="signals-title">
+        <div class="section-heading signals-heading"><div><p class="eyebrow"><span class="eyebrow-line pink"></span> YOUR SIGNALS / CURATED</p><h2 id="signals-title">A little <em>good input.</em></h2></div><p class="section-aside">A considered mix of things to watch and conversations to browse, refreshed from your saved interests.</p></div>
+        <div class="signals-grid">
+          <article class="feed-panel panel youtube-panel"><div class="panel-heading"><div><span class="card-kicker">WATCH NEXT</span><h3>YouTube picks</h3></div><a class="panel-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Open YouTube ↗</a></div><div class="topic-pills" id="youtube-topics"></div><div class="video-list" id="youtube-list"><p class="empty-state">Finding something useful…</p></div></article>
+          <article class="feed-panel panel reddit-panel"><div class="panel-heading"><div><span class="card-kicker">COMMUNITY PULSE</span><h3>Reddit topics</h3></div><div class="feed-tabs" role="tablist" aria-label="Reddit sort"><button class="feed-tab active" data-reddit-sort="hot" type="button" role="tab" aria-selected="true">Hot</button><button class="feed-tab" data-reddit-sort="new" type="button" role="tab" aria-selected="false">New</button></div></div><div class="topic-pills" id="reddit-topics"></div><div class="reddit-list" id="reddit-list"><p class="empty-state">Listening in…</p></div></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span class="brand"><span class="brand-mark">✦</span> DAYMARK</span><span>Less noise. Better signal.</span><span id="footer-status">Static GitHub Pages dashboard</span></footer>
+
+    <dialog class="location-dialog" id="location-dialog" aria-labelledby="location-dialog-title"><form method="dialog" id="location-form"><button class="dialog-close" value="cancel" type="submit" aria-label="Close location dialog">×</button><p class="eyebrow"><span class="eyebrow-line blue"></span> WEATHER LOCATION</p><h2 id="location-dialog-title">Where should we look?</h2><p class="dialog-copy">Use your current location or search for a city. Your choice stays in this browser.</p><button class="location-action" id="use-location-button" type="button"><span>◎</span> Use my current location</button><div class="location-divider"><span>or search</span></div><label class="sr-only" for="location-input">City or ZIP code</label><div class="location-search"><input id="location-input" name="location" type="search" placeholder="City or ZIP code" autocomplete="postal-code" /><button class="location-submit" type="submit">Set</button></div><p class="dialog-error" id="location-error" role="alert"></p></form></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-09-13T10:00:00Z",
+  "source": "fallback",
+  "stale": true,
+  "topics": ["Technology", "AI", "Cooking", "Yoga + kettlebells", "PlayStation"],
+  "items": [
+    {"topic":"TECHNOLOGY","title":"The quiet tools making a big difference this week","channel":"Marques Brownlee","publishedAt":"2026-09-12T15:00:00Z","url":"https://www.youtube.com/results?search_query=technology+tools"},
+    {"topic":"AI","title":"A practical guide to building a better AI workflow","channel":"The AI Advantage","publishedAt":"2026-09-11T18:00:00Z","url":"https://www.youtube.com/results?search_query=practical+AI+workflow"},
+    {"topic":"COOKING","title":"One-pan dinners that reward a slow Sunday","channel":"America's Test Kitchen","publishedAt":"2026-09-10T16:00:00Z","url":"https://www.youtube.com/results?search_query=one+pan+dinner+recipes"},
+    {"topic":"MOVEMENT","title":"A 20-minute kettlebell flow for a stronger day","channel":"Onnit","publishedAt":"2026-09-09T12:00:00Z","url":"https://www.youtube.com/results?search_query=20+minute+kettlebell+flow"},
+    {"topic":"PLAYSTATION","title":"The games worth keeping on your radar","channel":"PlayStation","publishedAt":"2026-09-08T20:00:00Z","url":"https://www.youtube.com/results?search_query=PlayStation+games+2026"}
+  ]
+}

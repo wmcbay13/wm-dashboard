@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-09-13T11:45:00Z",
+  "source": "fallback",
+  "stale": true,
+  "items": [
+    {"id":"demo-bills","league":"NFL","team":"Buffalo Bills","shortName":"Buffalo Bills","away":"Buffalo Bills","awayAbbr":"BUF","home":"New York Jets","homeAbbr":"NYJ","date":"2026-09-14T23:15:00Z","status":"pre","venue":"Highmark Stadium"},
+    {"id":"demo-braves","league":"MLB","team":"Atlanta Braves","shortName":"Atlanta Braves at Miami Marlins","away":"Atlanta Braves","awayAbbr":"ATL","home":"Miami Marlins","homeAbbr":"MIA","date":"2026-09-15T23:40:00Z","status":"pre","venue":" loanDepot park"},
+    {"id":"demo-devils","league":"NHL","team":"New Jersey Devils","shortName":"New Jersey Devils at New York Rangers","away":"New Jersey Devils","awayAbbr":"NJD","home":"New York Rangers","homeAbbr":"NYR","date":"2026-10-08T23:00:00Z","status":"pre","venue":"Madison Square Garden"},
+    {"id":"demo-dawgs","league":"CFB","team":"Georgia Bulldogs","shortName":"Georgia Bulldogs vs Auburn Tigers","away":"Auburn Tigers","awayAbbr":"AUB","home":"Georgia Bulldogs","homeAbbr":"UGA","date":"2026-09-19T16:30:00Z","status":"pre","venue":"Sanford Stadium"},
+    {"id":"demo-bills-final","league":"NFL","team":"Buffalo Bills","shortName":"Buffalo Bills 27, Baltimore Ravens 24","away":"Buffalo Bills","awayAbbr":"BUF","home":"Baltimore Ravens","homeAbbr":"BAL","awayScore":27,"homeScore":24,"date":"2026-09-07T00:20:00Z","status":"post","venue":"Highmark Stadium"}
+  ]
+}

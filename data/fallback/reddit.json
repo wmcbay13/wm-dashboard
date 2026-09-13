@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-09-13T10:00:00Z",
+  "source": "fallback",
+  "stale": true,
+  "topics": ["Tech", "AI", "Cooking", "Movement", "PlayStation", "Teams"],
+  "hot": [
+    {"subreddit":"technology","title":"What small technology change has improved your day-to-day life?","score":1840,"comments":312,"createdAt":"2026-09-13T09:20:00Z","url":"https://www.reddit.com/r/technology/"},
+    {"subreddit":"LocalLLaMA","title":"The local AI tools people are actually using this month","score":922,"comments":147,"createdAt":"2026-09-13T08:45:00Z","url":"https://www.reddit.com/r/LocalLLaMA/"},
+    {"subreddit":"Cooking","title":"What is your reliable weeknight dinner?","score":735,"comments":203,"createdAt":"2026-09-12T22:10:00Z","url":"https://www.reddit.com/r/Cooking/"},
+    {"subreddit":"kettlebell","title":"The simplest progression that finally made training stick","score":421,"comments":58,"createdAt":"2026-09-12T19:00:00Z","url":"https://www.reddit.com/r/kettlebell/"},
+    {"subreddit":"PlayStation","title":"What are you playing this weekend?","score":1100,"comments":266,"createdAt":"2026-09-12T17:30:00Z","url":"https://www.reddit.com/r/PlayStation/"},
+    {"subreddit":"buffalobills","title":"Bills week: what are you watching for?","score":620,"comments":91,"createdAt":"2026-09-12T15:20:00Z","url":"https://www.reddit.com/r/buffalobills/"}
+  ],
+  "new": [
+    {"subreddit":"technology","title":"The best low-friction automation you added recently","score":120,"comments":33,"createdAt":"2026-09-13T11:05:00Z","url":"https://www.reddit.com/r/technology/"},
+    {"subreddit":"yoga","title":"A gentle reset for tight shoulders and hips","score":87,"comments":14,"createdAt":"2026-09-13T10:50:00Z","url":"https://www.reddit.com/r/yoga/"},
+    {"subreddit":"Braves","title":"Series preview and lineup discussion","score":65,"comments":28,"createdAt":"2026-09-13T10:15:00Z","url":"https://www.reddit.com/r/Braves/"},
+    {"subreddit":"georgiabulldogs","title":"Early look at Saturday's matchup","score":102,"comments":22,"createdAt":"2026-09-13T09:55:00Z","url":"https://www.reddit.com/r/georgiabulldogs/"}
+  ]
+}
